@@ -64,7 +64,9 @@ basic.forever(function () {
         }
         led.plot(X, Y)
         POS = COUNT
-        BON = 1
+        if (BON == 0) {
+            BON = 1
+        }
         basic.pause(DELAY)
     }
 })
